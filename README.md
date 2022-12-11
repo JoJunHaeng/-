@@ -9,7 +9,7 @@ Tensorflow 1.15
 
 ![image](https://user-images.githubusercontent.com/93234544/206904180-13cc8699-6b82-4d75-82f6-362d770ee15d.png)
 
-드론 파일럿이 모델 학습에 필요한 데이터 셋을 자체 구축하여 프로젝트에 수행
+* 드론 파일럿이 모델 학습에 필요한 데이터 셋을 자체 구축하여 프로젝트에 수행
 
 
 # 2. Model
