@@ -4,8 +4,7 @@
 
 ## 프로젝트 담당 업무
 * 관련 연구 조사
-* 데이터 수집
-* 딥러닝 model 개발
+* 딥러닝 model 개발 및 데이터 분석
 
 ## Version
 * python3.7, Tensorflow 1.15
