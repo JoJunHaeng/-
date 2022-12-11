@@ -2,8 +2,14 @@
 
 * #### 드론으로 촬영한 항공 영상에서 옥외 문화재 객체 탐지 및 훼손 점검 프로세스를 자동화하기 위한 프로젝트. 데이터 분석을 통하여 모델의 hyper-parameter를 tuinng하여 모델의 성능을 개선함
 
+## 프로젝트 담당 업무
+* 관련 연구 조사
+* 데이터 수집
+* 딥러닝 model 개발
+
 ## Version
-Tensorflow 1.15
+* python3.7, Tensorflow 1.15
+
 
 ## 1. Make dataset
 
