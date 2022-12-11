@@ -21,13 +21,13 @@ Tensorflow 1.15
 # 3. Data 분석
 
 ![image](https://user-images.githubusercontent.com/93234544/206905350-511b6386-c968-4ad0-8a2a-4473e89b3ee3.png)
-* #### Data set의 ground-truth bounding boxes의 width, height를 그래프로 표현
-* #### Model의 성능에 가장 큰 영향을 미치는 hyper-parameter인 anchor box를 설정하기 위해 Data set 분석
+* Data set의 ground-truth bounding boxes의 width, height를 그래프로 표현
+* Model의 성능에 가장 큰 영향을 미치는 hyper-parameter인 anchor box를 설정하기 위해 Data set 분석
 ***
 ![image](https://user-images.githubusercontent.com/93234544/206904951-84da7aa6-b0ba-4845-8436-863341527996.png)
-* #### Model의 hyper-parameter 중 하나인 anchor box를 튜닝하기 위해서 K-means clustering을 활용
-* #### K-means clustering의 K를 반복 탐색하여 anchor box 크기가 점진적으로 증가하도록 설정
-* #### Data set의 전체 ground-truth bounding boxes의 aspect ratio를 감안하여 anchor box의 aspect ratio를 0.83으로 설정
+* Model의 hyper-parameter 중 하나인 anchor box를 튜닝하기 위해서 K-means clustering을 활용
+* K-means clustering의 K를 반복 탐색하여 anchor box 크기가 점진적으로 증가하도록 설정
+* Data set의 전체 ground-truth bounding boxes의 aspect ratio를 감안하여 anchor box의 aspect ratio를 0.83으로 설정
 ***
 ![image](https://user-images.githubusercontent.com/93234544/206904579-2a33070d-1f9d-4d6d-8eea-50d5b26ae426.png)
 * 극단적인 종횡비를 가진 옥외 문화재가 있는 영상을 추려 Mosaic 기법으로 Data agumentation
