@@ -37,7 +37,6 @@
 * K-means clustering의 cluster의 x 좌표가 점진적으로 증가하는 형태가 나올 때 까지 K를 반복 탐색하여 anchor box 크기를 설정
 * K가 결정된 시점에서의 cluster의 x 값을 anchor box의 크기로 설정함
 * Data set의 전체 ground-truth bounding boxes의 aspect ratio를 감안하여 anchor box의 aspect ratio를 0.83으로 설정
-* 
 ***
 ![image](https://user-images.githubusercontent.com/93234544/206904579-2a33070d-1f9d-4d6d-8eea-50d5b26ae426.png)
 * 극단적인 종횡비를 가진 옥외 문화재가 있는 영상을 추려 Mosaic 기법으로 Data agumentation
@@ -46,9 +45,9 @@
 * #### Model 학습 조건별 mAP
 실험 조건|Box size|Aspect ratio|
 ---|---|---|
-실험 모델(anchor box 종횡비 미적용)|[161, 329, 716]|(1 : 1), (1 : 1.5),(1.5 : 1), (1.5 : 1.5)|
-실험 모델(anchor box 종횡비 적용)|[161, 329, 716]|[(1 : 0.83), (1 : 1.245),(1.5 : 1), (1.5 : 1.245)]|
-기존모델(original Faster RCNN)|[128, 256, 512]|[(1 : 1), (1 : 2),(2 : 1)]|
+실험 모델(anchor box 종횡비 미적용)|[161*161, 329*329, 716*716]|(1 : 1), (1 : 1.5),(1.5 : 1), (1.5 : 1.5)|
+실험 모델(anchor box 종횡비 적용)|[161*161, 329*329, 716*716]|[(1 : 0.83), (1 : 1.245),(1.5 : 1), (1.5 : 1.245)]|
+기존모델(original Faster RCNN)|[128*128, 256*256, 512*512]|[(1 : 1), (1 : 2),(2 : 1)]|
   
 * 실험 모델들은 K-means clustering으로 결정한 cluster의 x 값과 aspect ratio로 anchor box의 크기 및 종횡비를 설정
 * 기존 모델은 Faster RCNN의 원저자가 논문에 기재한 값을 사용
