@@ -32,12 +32,18 @@
 
 # 2. Model 분석
 ![image](https://user-images.githubusercontent.com/93234544/206904369-8c10381b-10f1-4c2a-b3e4-16ba30e86807.png)
-
 * 객체 탐지 모델로 Faster R-CNN(backbone network : resnet50) 선정하여 객체 탐지 기능 개발
 
 ![image](https://user-images.githubusercontent.com/93234544/218729700-3680cd8e-cc16-458c-aec9-e95feea6ca76.png)
+- 𝑃_𝑖 : Predicted probability of anchor 
+- 𝑃_𝑖^∗ : Ground-truth label (1: anchor is positive, 0: anchor is negative)
+- 𝑡_𝑖^∗  : Predicted Bounding box
+- 𝑡_𝑖 : Ground-truth box
+- Lambda : Balancing parameter
+- 𝑁_𝑐𝑙𝑠 : mini-batch size
+- 𝑁_𝑟𝑒𝑔 : 이미지 내부에서 사용된 모든 anchor의 location
 
-
+* 원본 논문(Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks)의 분석 결과 모델의 성능에 가장 큰 영향을 미치는 hyperparameter는 anchor box이므로 anchor box를 중점적으로 tuninng
 
 
 # 3. Data 분석
