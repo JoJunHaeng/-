@@ -28,7 +28,12 @@
 ![image](https://user-images.githubusercontent.com/93234544/206904180-13cc8699-6b82-4d75-82f6-362d770ee15d.png)
 
 * 드론 파일럿이 모델 학습에 필요한 데이터 셋을 자체 구축하여 프로젝트에 수행
-* 학습 가능한 옥외 문화재 영역 9338건 구축
+* 학습 가능한 옥외 문화재 데이터 셋 구축
+---|ground truth|
+train set|8055개|
+val set|871개|
+test set|864개|
+
 
 # 2. Model 분석
 ![image](https://user-images.githubusercontent.com/93234544/206904369-8c10381b-10f1-4c2a-b3e4-16ba30e86807.png)
@@ -58,16 +63,16 @@
 * K가 결정된 시점에서의 cluster의 x 값을 anchor box의 크기로 설정함
 * Data set의 전체 ground-truth bounding boxes의 aspect ratio를 감안하여 anchor box의 aspect ratio를 0.83으로 설정
 ***
-![image](https://user-images.githubusercontent.com/93234544/206904579-2a33070d-1f9d-4d6d-8eea-50d5b26ae426.png)
-* 극단적인 종횡비를 가진 옥외 문화재가 있는 영상을 추려 Mosaic 기법으로 Data agumentation
-* 모델의 성능을 저하시킬 수 있는 Sacle imbalence problem을 극복하기 위한 data
-***
 ![image](https://user-images.githubusercontent.com/93234544/218731285-e2701cec-fa1f-4cde-bd99-90a52f5d39c4.png)
 Scale imbalance problem : Scale 불균형은 객체의 사이즈 또는 Input에 사용하는 Ground truth에 의해 발생한다. 객체 탐지를 위해 설계된 Backbone network일지라도, Ground truth의 다양한 Scale을 처리하기에 충분하지 않다.
 (a) : 정규화된 이미지의 너비의 빈도
 (b) : 정규화된 이미지의 높이의 빈도
 (c) : 정규화된 이미지의 넓이의 빈도
 구축한 Data set의 Ground truth 영역의 크기 분포는 scale imbalance problem의 위험이 존재
+***
+![image](https://user-images.githubusercontent.com/93234544/206904579-2a33070d-1f9d-4d6d-8eea-50d5b26ae426.png)
+* Scale imbalance proble을 야기할 수 있는 452개의 case를 추려 Mosaic 기법으로 Data agumentation
+* 모델의 성능을 저하시킬 수 있는 Sacle imbalence problem을 극복하기 위한 data
 
 
 # 4. 조건별 Model hyperparamter 설정
