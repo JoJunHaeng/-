@@ -27,15 +27,14 @@
 
 ![image](https://user-images.githubusercontent.com/93234544/206904180-13cc8699-6b82-4d75-82f6-362d770ee15d.png)
 
-* 드론 파일럿이 모델 학습에 필요한 데이터 셋을 자체 구축하여 프로젝트에 수행
-* 학습 가능한 옥외 문화재 데이터 셋 구축
+* 드론 파일럿이 모델 학습에 필요한 옥외 문화재 데이터 셋을 자체 구축하여 프로젝트에 수행
 
 Data set|ground truth|
 ---|---|
 train set|8055개|
 val set|871개|
 test set|864개|
-
+total|9338개|
 
 # 2. Model 분석
 ![image](https://user-images.githubusercontent.com/93234544/206904369-8c10381b-10f1-4c2a-b3e4-16ba30e86807.png)
