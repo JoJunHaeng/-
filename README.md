@@ -29,7 +29,7 @@
 
 * 드론 파일럿이 모델 학습에 필요한 데이터 셋을 자체 구축하여 프로젝트에 수행
 * 학습 가능한 옥외 문화재 데이터 셋 구축
----|ground truth|
+asd|ground truth|
 train set|8055개|
 val set|871개|
 test set|864개|
