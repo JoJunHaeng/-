@@ -62,7 +62,15 @@
 * 극단적인 종횡비를 가진 옥외 문화재가 있는 영상을 추려 Mosaic 기법으로 Data agumentation
 * 모델의 성능을 저하시킬 수 있는 Sacle imbalence problem을 극복하기 위한 data
 ***
-* #### Model 학습 조건별 mAP
+![image](https://user-images.githubusercontent.com/93234544/218731285-e2701cec-fa1f-4cde-bd99-90a52f5d39c4.png)
+Scale imbalance problem : Scale 불균형은 객체의 사이즈 또는 Input에 사용하는 Ground truth에 의해 발생한다. 객체 탐지를 위해 설계된 Backbone network일지라도, Ground truth의 다양한 Scale을 처리하기에 충분하지 않다.
+(a) : 정규화된 이미지의 너비의 빈도
+(b) : 정규화된 이미지의 높이의 빈도
+(c) : 정규화된 이미지의 넓이의 빈도
+구축한 Data set의 Ground truth 영역의 크기 분포는 scale imbalance problem의 위험이 존재
+
+
+# 4. 조건별 Model hyperparamter 설정
 실험 조건|Box size|Aspect ratio|
 ---|---|---|
 실험 모델(anchor box 종횡비 미적용)|[161 * 161, 329 * 329, 716 * 716]|(1 : 1), (1 : 1.5),(1.5 : 1), (1.5 : 1.5)|
@@ -74,8 +82,8 @@
 
 
 
-# 4. result 
-* #### Model 학습 조건별 mAP
+# 5. result 
+* #### 학습 조건별 Model  mAP
 제안 모델|AP<sub>50|AP<sub>75|AP<sub>90|mAP
 ---|---|---|---|---|
 실험 모델(anchor box 종횡비 미적용 & Mosaic img 학습)|0.902|0.814|0.424|0.689|
