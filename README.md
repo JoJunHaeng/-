@@ -30,10 +30,14 @@
 * 드론 파일럿이 모델 학습에 필요한 데이터 셋을 자체 구축하여 프로젝트에 수행
 * 학습 가능한 옥외 문화재 영역 9338건 구축
 
-# 2. Model
+# 2. Model 분석
 ![image](https://user-images.githubusercontent.com/93234544/206904369-8c10381b-10f1-4c2a-b3e4-16ba30e86807.png)
 
 * 객체 탐지 모델로 Faster R-CNN(backbone network : resnet50) 선정하여 객체 탐지 기능 개발
+
+![image](https://user-images.githubusercontent.com/93234544/218729700-3680cd8e-cc16-458c-aec9-e95feea6ca76.png)
+
+
 
 
 # 3. Data 분석
